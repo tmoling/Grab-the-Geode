@@ -1,10 +1,10 @@
 //calculation for random number 19 to 120
-var random = Math.floor(Math.random() * 120) + 19
+var random = Math.floor(Math.random() * 120) + 19;
 //calculation for random number 1 to 12--four crystals
-var number1 = Math.floor(Math.random() * 12) + 1
-var number2 = Math.floor(Math.random() * 12) + 1
-var number3 = Math.floor(Math.random() * 12) + 1
-var number4 = Math.floor(Math.random() * 12) + 1
+var number1 = Math.floor(Math.random() * 12) + 1;
+var number2 = Math.floor(Math.random() * 12) + 1;
+var number3 = Math.floor(Math.random() * 12) + 1;
+var number4 = Math.floor(Math.random() * 12) + 1;
 //var for current score set to 0
 var userTotal = 0;
 //var for wins and losses
@@ -47,7 +47,7 @@ function bigLoser() {
   alert("It's crystal clear you need more practice! Try again.");
   losses++;
   $('#numberOfLosses').text(losses);
-  reset()
+  reset();
 }
 
 
@@ -98,4 +98,4 @@ $('#fourthGeode').on('click', function () {
   else if (userTotal > random) {
     bigLoser();
   }
-});   
+}); 
